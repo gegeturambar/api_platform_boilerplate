@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="38px" height="38px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>button_off</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="30" height="30" rx="15"></rect>
+        <filter x="-20.0%" y="-20.0%" width="140.0%" height="140.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="2" operator="erode" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="4" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Mon-prévisionnel" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mon-prévisionnel---Modification---Ajout-souscription" transform="translate(-1267.000000, -378.000000)" fill-rule="nonzero">
+            <g id="Group-9" transform="translate(176.000000, 333.000000)">
+                <g id="Group-3" transform="translate(0.000000, 39.000000)">
+                    <g id="button_off" transform="translate(1095.000000, 10.000000)">
+                        <g id="Rectangle">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                            <use fill="#FFFFFF" xlink:href="#path-1"></use>
+                        </g>
+                        <g id="+" transform="translate(8.000000, 8.000000)" fill="#001A70">
+                            <rect id="Rectangle" x="6" y="0" width="3" height="14"></rect>
+                            <rect id="Rectangle" transform="translate(7.500000, 7.000000) rotate(90.000000) translate(-7.500000, -7.000000) " x="6" y="0" width="3" height="14"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

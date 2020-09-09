@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using API Platform"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link href="%PUBLIC_URL%/bootstrap-4.3.1-dist/css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="%PUBLIC_URL%/bootstrap-4.3.1-dist/css/bootstrap-grid.css" rel="stylesheet" type="text/css" />
+    <link href="%PUBLIC_URL%/bootstrap-4.3.1-dist/css/bootstrap-reboot.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/css/style.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/css/rSlider.min.css" media="all">
+
+    <script src="%PUBLIC_URL%/js/jquery-3.4.1.min.js"></script>
+    <script src="%PUBLIC_URL%/js/rSlider.min.js"></script>
+    <script src="%PUBLIC_URL%/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="https://cdn.jsdelivr.net/gh/RubaXa/Sortable/Sortable.min.js"></script>
+    <script src="%PUBLIC_URL%/js/utils.js"></script>
+
+    <title>API Platform</title>
+
+  </head>
+  <body id="home">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+
+  <script>
+
+      $('#myModal').on('shown.bs.modal', function () {
+          $('#myInput').trigger('focus')
+      })
+
+      $(function() {
+
+          window.setTimeout(function() {
+              $('section').css('opacity', '1');
+          }, 2000);
+
+          $('.test').addClass('default');
+
+          $('.test').on('click', function() {
+
+              var e = $('section > div');
+              if(e.hasClass('expand')){
+                  e.removeClass('expand');
+                  $(this).addClass('expand');
+              } else { $(this).addClass('expand'); }
+          })
+      })
+  </script>
+  <script>
+      var MONTHS = ['Janvier', 'Fevrier', 'Mars', 'Avril', 'Mai', 'Juin', 'July', 'August', 'September', 'October', 'November', 'December'];
+      var config = {
+          type: 'line',
+          data: {
+              labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+              datasets: [{
+                  label: 'My First dataset',
+                  backgroundColor: window.chartColors.red,
+                  borderColor: window.chartColors.red,
+                  data: [
+                      randomScalingFactor(),
+                      randomScalingFactor(),
+                      randomScalingFactor(),
+                      randomScalingFactor(),
+                      randomScalingFactor(),
+                      randomScalingFactor(),
+                      randomScalingFactor()
+                  ],
+                  fill: false,
+              }, {
+                  label: 'My Second dataset',
+                  fill: false,
+                  backgroundColor: window.chartColors.blue,
+                  borderColor: window.chartColors.blue,
+                  data: [
+                      randomScalingFactor(),
+                      randomScalingFactor(),
+                      randomScalingFactor(),
+                      randomScalingFactor(),
+                      randomScalingFactor(),
+                      randomScalingFactor(),
+                      randomScalingFactor()
+                  ],
+              }]
+          },
+          options: {
+              responsive: true,
+              title: {
+                  display: false,
+                  text: 'Chart.js Line Chart'
+              },
+              legend: {
+                  display:false,
+              },
+              tooltips: {
+                  mode: 'index',
+                  intersect: false,
+              },
+              hover: {
+                  mode: 'nearest',
+                  intersect: true
+              },
+              scales: {
+                  x: {
+                      display: true,
+                      scaleLabel: {
+                          display: true,
+                          labelString: 'Month'
+                      }
+                  },
+                  y: {
+                      display: true,
+                      scaleLabel: {
+                          display: true,
+                          labelString: 'Value'
+                      }
+                  }
+              }
+          }
+      };
+
+      window.onload = function() {
+          var ctx = document.getElementById('canvas').getContext('2d');
+          window.myLine = new Chart(ctx, config);
+      };
+
+      document.getElementById('randomizeData').addEventListener('click', function() {
+          config.data.datasets.forEach(function(dataset) {
+              dataset.data = dataset.data.map(function() {
+                  return randomScalingFactor();
+              });
+
+          });
+
+          window.myLine.update();
+      });
+
+      var colorNames = Object.keys(window.chartColors);
+      document.getElementById('addDataset').addEventListener('click', function() {
+          var colorName = colorNames[config.data.datasets.length % colorNames.length];
+          var newColor = window.chartColors[colorName];
+          var newDataset = {
+              label: 'Dataset ' + config.data.datasets.length,
+              backgroundColor: newColor,
+              borderColor: newColor,
+              data: [],
+              fill: false
+          };
+
+          for (var index = 0; index < config.data.labels.length; ++index) {
+              newDataset.data.push(randomScalingFactor());
+          }
+
+          config.data.datasets.push(newDataset);
+          window.myLine.update();
+      });
+
+      document.getElementById('addData').addEventListener('click', function() {
+          if (config.data.datasets.length > 0) {
+              var month = MONTHS[config.data.labels.length % MONTHS.length];
+              config.data.labels.push(month);
+
+              config.data.datasets.forEach(function(dataset) {
+                  dataset.data.push(randomScalingFactor());
+              });
+
+              window.myLine.update();
+          }
+      });
+
+      document.getElementById('removeDataset').addEventListener('click', function() {
+          config.data.datasets.splice(0, 1);
+          window.myLine.update();
+      });
+
+      document.getElementById('removeData').addEventListener('click', function() {
+          config.data.labels.splice(-1, 1); // remove the label first
+
+          config.data.datasets.forEach(function(dataset) {
+              dataset.data.pop();
+          });
+
+          window.myLine.update();
+      });
+  </script>
+</html>

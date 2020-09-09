@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="9px" viewBox="0 0 14 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>chevron_down</title>
+    <desc>Created with Sketch.</desc>
+    <g id="SYMBOLES" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="input-copy-2" transform="translate(-248.000000, -16.000000)" fill="#4C4C4C" fill-rule="nonzero">
+            <g id="input">
+                <g id="chevron_down" transform="translate(248.000000, 16.000000)">
+                    <path d="M10.7246611,3.88377334 L4.60904852,-1.74609314 C4.24129651,-2.08463562 3.64350667,-2.08463562 3.275814,-1.74609314 C2.90812133,-1.40755065 2.908062,-0.857241596 3.275814,-0.518753732 L8.72759802,4.50001024 L3.275814,9.51877421 C2.908062,9.8573167 2.908062,10.4076258 3.275814,10.7461136 C3.64356601,11.0846015 4.24135585,11.0846561 4.60904852,10.7461136 L10.7246611,5.11799502 C10.9113258,4.94615658 11.0018694,4.72220947 10.9999708,4.5017035 C10.9999708,4.27611775 10.9094271,4.0538639 10.7246611,3.88377334 Z" id="Path" transform="translate(7.000000, 4.500000) rotate(90.000000) translate(-7.000000, -4.500000) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

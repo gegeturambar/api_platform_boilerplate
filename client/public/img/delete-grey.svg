@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="20" cy="20" r="20"></circle>
+        <filter x="-16.2%" y="-13.8%" width="132.5%" height="132.5%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="1" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="SYMBOLES" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="serveurs" transform="translate(-1090.000000, -7.000000)">
+            <g id="Group-2" transform="translate(1094.000000, 10.000000)">
+                <g id="Oval-Copy" fill-rule="nonzero">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#CCCCCC" xlink:href="#path-1"></use>
+                </g>
+                <g id="garbage-bin-svgrepo-com" transform="translate(13.000000, 10.000000)" fill="#FFFFFF">
+                    <rect id="Rectangle" x="4" y="8.8" width="1" height="8"></rect>
+                    <rect id="Rectangle" x="7.2" y="8.8" width="1" height="8"></rect>
+                    <rect id="Rectangle" x="9.6" y="8.8" width="1" height="8"></rect>
+                    <path d="M13.44,2 L9.6,2 L9.6,1 C9.6,0.44765625 9.17025,0 8.64,0 L5.76,0 C5.22975,0 4.8,0.44765625 4.8,1 L4.8,2 L0.96,2 C0.42975,2 0,2.44765625 0,3 L0,5 C0,5.55234375 0.42975,6 0.96,6 L0.96,19 C0.96,19.5523437 1.38975,20 1.92,20 L12.48,20 C13.01025,20 13.44,19.5523438 13.44,19 L13.44,6 C13.97025,6 14.4,5.55234375 14.4,5 L14.4,3 C14.4,2.44765625 13.97025,2 13.44,2 Z M5.76,1 L8.64,1 L8.64,2 L5.76,2 L5.76,1 L5.76,1 Z M12.48,19 L1.92,19 L1.92,6 L12.48,6 L12.48,19 Z M13.44,5 L0.96,5 L0.96,3 L13.44,3 L13.44,5 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="11px" height="19px" viewBox="0 0 11 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Triangle</title>
+    <desc>Created with Sketch.</desc>
+    <g id="SYMBOLES" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="serveurs" transform="translate(-14.000000, -21.000000)" fill="#001A70" fill-rule="nonzero">
+            <path d="M20.7399401,25.8139341 L28.4793884,34.3273272 C28.8508953,34.7359848 28.8207787,35.3684331 28.4121211,35.7399401 C28.2280491,35.9072782 27.9882143,36 27.7394483,36 L12.2605517,36 C11.708267,36 11.2605517,35.5522847 11.2605517,35 C11.2605517,34.751234 11.3532735,34.5113992 11.5206116,34.3273272 L19.2600599,25.8139341 C19.6315669,25.4052765 20.2640152,25.3751599 20.6726728,25.7466668 C20.6961497,25.7680094 20.7185975,25.7904572 20.7399401,25.8139341 Z" id="Triangle" transform="translate(20.000000, 30.500000) rotate(90.000000) translate(-20.000000, -30.500000) "></path>
+        </g>
+    </g>
+</svg>

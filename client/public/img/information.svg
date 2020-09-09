@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="10px" viewBox="0 0 10 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>information</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Mon-prévisionnel" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mon-prévisionnel---Modification-serveur" transform="translate(-441.000000, -155.000000)" fill="#001A70" fill-rule="nonzero">
+            <g id="Group-5" transform="translate(176.000000, 145.000000)">
+                <g id="Group-10" transform="translate(265.000000, 10.000000)">
+                    <g id="information">
+                        <path d="M5,0 C2.243,0 0,2.2430303 0,5.0000303 C0,7.7570303 2.243,10 5,10 C7.757,10 10,7.7570303 10,5.0000303 C10,2.2430303 7.757,0 5,0 Z M5,9.09090909 C2.74424242,9.09090909 0.909090909,7.25575758 0.909090909,5.0000303 C0.909090909,2.74430303 2.74424242,0.909090909 5,0.909090909 C7.25575758,0.909090909 9.09090909,2.74430303 9.09090909,5.0000303 C9.09090909,7.25575758 7.25572727,9.09090909 5,9.09090909 Z" id="Shape"></path>
+                        <path d="M5,1.875 C4.65536857,1.875 4.375,2.1555 4.375,2.50028125 C4.375,2.84475 4.65536857,3.125 5,3.125 C5.34463143,3.125 5.625,2.84475 5.625,2.50028125 C5.625,2.1555 5.34463143,1.875 5,1.875 Z" id="Path"></path>
+                        <path d="M5,4.375 C4.65483333,4.375 4.375,4.584875 4.375,4.84375 L4.375,7.65625 C4.375,7.915125 4.65483333,8.125 5,8.125 C5.34516667,8.125 5.625,7.915125 5.625,7.65625 L5.625,4.84375 C5.625,4.584875 5.34516667,4.375 5,4.375 Z" id="Path"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
